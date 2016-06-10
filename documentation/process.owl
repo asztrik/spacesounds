@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://linux-w1hr.site_local#"
+     xml:base="http://linux-w1hr.site_local"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:pmf="http://localhost/pmf.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:DIO="http://timbus.teco.edu/ontologies/DIO.owl#">
+    <owl:Ontology rdf:about="http://linux-w1hr.site_local">
+        <owl:imports rdf:resource="http://timbus.teco.edu/ontologies/DIO.owl"/>
+        <owl:imports rdf:resource="http://timbus.teco.edu/ontologies/DSOs/CUDF.owl"/>
+        <owl:imports rdf:resource="http://timbus.teco.edu/ontologies/DSOs/securityDSO.owl"/>
+        <owl:imports rdf:resource="http://timbus.teco.edu/ontologies/DSOs/serviceMapping.owl"/>
+        <owl:imports rdf:resource="http://timbus.teco.edu/ontologies/DSOs/software.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#visLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#visLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://timbus.teco.edu/ontologies/DIO.owl#accesses -->
+
+    <owl:ObjectProperty rdf:about="http://timbus.teco.edu/ontologies/DIO.owl#accesses"/>
+    
+
+
+    <!-- http://timbus.teco.edu/ontologies/DIO.owl#association -->
+
+    <owl:ObjectProperty rdf:about="http://timbus.teco.edu/ontologies/DIO.owl#association"/>
+    
+
+
+    <!-- http://timbus.teco.edu/ontologies/DIO.owl#composedOf -->
+
+    <owl:ObjectProperty rdf:about="http://timbus.teco.edu/ontologies/DIO.owl#composedOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/pmf.owl#environmentVars -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/pmf.owl#environmentVars"/>
+    
+
+
+    <!-- http://localhost/pmf.owl#networkSettings -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/pmf.owl#networkSettings"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://timbus.teco.edu/ontologies/DIO.owl#ApplicationFunction -->
+
+    <owl:Class rdf:about="http://timbus.teco.edu/ontologies/DIO.owl#ApplicationFunction"/>
+    
+
+
+    <!-- http://timbus.teco.edu/ontologies/DIO.owl#InfrastructureFunction -->
+
+    <owl:Class rdf:about="http://timbus.teco.edu/ontologies/DIO.owl#InfrastructureFunction"/>
+    
+
+
+    <!-- http://timbus.teco.edu/ontologies/DIO.owl#Node -->
+
+    <owl:Class rdf:about="http://timbus.teco.edu/ontologies/DIO.owl#Node"/>
+    
+
+
+    <!-- http://timbus.teco.edu/ontologies/DIO.owl#SystemSoftware -->
+
+    <owl:Class rdf:about="http://timbus.teco.edu/ontologies/DIO.owl#SystemSoftware"/>
+    
+
+
+    <!-- http://timbus.teco.edu/ontologies/DSOs/security.owl#User -->
+
+    <owl:Class rdf:about="http://timbus.teco.edu/ontologies/DSOs/security.owl#User"/>
+    
+
+
+    <!-- http://timbus.teco.edu/ontologies/DSOs/software.owl#DataFile -->
+
+    <owl:Class rdf:about="http://timbus.teco.edu/ontologies/DSOs/software.owl#DataFile"/>
+    
+
+
+    <!-- http://timbus.teco.edu/ontologies/DSOs/software.owl#OperatingSystem -->
+
+    <owl:Class rdf:about="http://timbus.teco.edu/ontologies/DSOs/software.owl#OperatingSystem"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2F -->
+
+    <owl:NamedIndividual rdf:about="http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2F">
+        <rdf:type rdf:resource="http://timbus.teco.edu/ontologies/DSOs/software.owl#DataFile"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/home/asztrik/Documents/TUW/2DP/3/</rdfs:label>
+        <rdfs:visLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</rdfs:visLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2Fmaker.sh -->
+
+    <owl:NamedIndividual rdf:about="http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2Fmaker.sh">
+        <rdf:type rdf:resource="http://timbus.teco.edu/ontologies/DSOs/software.owl#DataFile"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/home/asztrik/Documents/TUW/2DP/3/maker.sh</rdfs:label>
+        <rdfs:visLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maker.sh</rdfs:visLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linux-w1hr.site_local#3 -->
+
+    <owl:NamedIndividual rdf:about="http://linux-w1hr.site_local#3">
+        <rdf:type rdf:resource="http://timbus.teco.edu/ontologies/DIO.owl#SystemSoftware"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</rdfs:label>
+        <DIO:composedOf rdf:resource="http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2F"/>
+        <DIO:composedOf rdf:resource="http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2Fmaker.sh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linux-w1hr.site_local#Linux -->
+
+    <owl:NamedIndividual rdf:about="http://linux-w1hr.site_local#Linux">
+        <rdf:type rdf:resource="http://timbus.teco.edu/ontologies/DSOs/software.owl#OperatingSystem"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linux-w1hr.site_local#asztrik -->
+
+    <owl:NamedIndividual rdf:about="http://linux-w1hr.site_local#asztrik">
+        <rdf:type rdf:resource="http://timbus.teco.edu/ontologies/DSOs/security.owl#User"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asztrik</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linux-w1hr.site_local#inf_process_-1 -->
+
+    <owl:NamedIndividual rdf:about="http://linux-w1hr.site_local#inf_process_-1">
+        <rdf:type rdf:resource="http://timbus.teco.edu/ontologies/DIO.owl#InfrastructureFunction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inf_process_-1</rdfs:label>
+        <DIO:accesses rdf:resource="http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2F"/>
+        <DIO:accesses rdf:resource="http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2Fmaker.sh"/>
+        <DIO:accesses rdf:resource="http://linux-w1hr.site_local#3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linux-w1hr.site_local#inf_process_0 -->
+
+    <owl:NamedIndividual rdf:about="http://linux-w1hr.site_local#inf_process_0">
+        <rdf:type rdf:resource="http://timbus.teco.edu/ontologies/DIO.owl#InfrastructureFunction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inf_process_0</rdfs:label>
+        <DIO:accesses rdf:resource="http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2F"/>
+        <DIO:accesses rdf:resource="http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2Fmaker.sh"/>
+        <DIO:accesses rdf:resource="http://linux-w1hr.site_local#3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linux-w1hr.site_local#inf_process_1 -->
+
+    <owl:NamedIndividual rdf:about="http://linux-w1hr.site_local#inf_process_1">
+        <rdf:type rdf:resource="http://timbus.teco.edu/ontologies/DIO.owl#InfrastructureFunction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inf_process_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linux-w1hr.site_local#local_system -->
+
+    <owl:NamedIndividual rdf:about="http://linux-w1hr.site_local#local_system">
+        <rdf:type rdf:resource="http://timbus.teco.edu/ontologies/DIO.owl#Node"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xrn://+machine?+hostid=007f0100/+hostname=linux-w1hr.site</rdfs:label>
+        <pmf:networkSettings rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></pmf:networkSettings>
+        <pmf:environmentVars rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALSA_CONFIG_PATH=/etc/alsa-pulse.conf
+AUDIODRIVER=pulseaudio
+BASH=/bin/bash
+BASHOPTS=checkwinsize:cmdhist:extquote:force_fignore:hostcomplete:interactive_comments:nullglob:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=([0]=&quot;4&quot;)
+BASH_ARGV=([0]=&quot;/home/asztrik/Documents/TUW/2DP/3/&quot; [1]=&quot;-d&quot; [2]=&quot;/home/asztrik/Documents/TUW/2DP/3/maker.sh&quot; [3]=&quot;-s&quot;)
+BASH_CMDS=()
+BASH_LINENO=([0]=&quot;0&quot;)
+BASH_SOURCE=([0]=&quot;/tmp/pmf-capture_3369688720355192544/main.sh&quot;)
+BASH_VERSINFO=([0]=&quot;4&quot; [1]=&quot;2&quot; [2]=&quot;53&quot; [3]=&quot;1&quot; [4]=&quot;release&quot; [5]=&quot;x86_64-suse-linux-gnu&quot;)
+BASH_VERSION=&apos;4.2.53(1)-release&apos;
+CONFIG_SITE=/usr/share/site/x86_64-unknown-linux-gnu
+CPU=x86_64
+CSHEDIT=emacs
+CVS_RSH=ssh
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-jpL6600G2m,guid=55a9b9a04b2798914c8f67755759a019
+DESKTOP_SESSION=gnome
+DIRSTACK=()
+DISPLAY=:0
+EUID=1000
+FROM_HEADER=
+GDMSESSION=gnome
+GDM_LANG=en_US.UTF-8
+GJS_DEBUG_OUTPUT=stderr
+GJS_DEBUG_TOPICS=&apos;JS ERROR;JS LOG&apos;
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GPG_AGENT_INFO=/run/user/1000/keyring/gpg:0:1
+GPG_TTY=/dev/pts/2
+GROUPS=()
+GTK_MODULES=canberra-gtk-module
+G_BROKEN_FILENAMES=1
+G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-15,CP1252
+HISTSIZE=1000
+HOME=/home/asztrik
+HOST=linux-w1hr.site
+HOSTNAME=linux-w1hr.site
+HOSTTYPE=x86_64
+ICEAUTHORITY=/home/asztrik/.ICEauthority
+IFS=&apos; 	
+&apos;
+INPUTRC=/home/asztrik/.inputrc
+JAVA_BINDIR=/usr/java/latest/bin
+JAVA_HOME=/usr/java/latest
+JAVA_ROOT=/usr/java/latest
+JDK_HOME=/usr/java/latest
+JRE_HOME=/usr/lib64/jvm/jre
+KRDIR=/home/asztrik/abevjava/eKuldes
+LANG=en_US.UTF-8
+LANGUAGE=
+LC_CTYPE=en_US.UTF-8
+LESS=&apos;-M -I -R&apos;
+LESSCLOSE=&apos;lessclose.sh %s %s&apos;
+LESSKEY=/etc/lesskey.bin
+LESSOPEN=&apos;lessopen.sh %s&apos;
+LESS_ADVANCED_PREPROCESSOR=no
+LOGNAME=asztrik
+LS_COLORS=&apos;no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.cmd=00;32:*.exe=01;32:*.com=01;32:*.bat=01;32:*.btm=01;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.lzma=00;31:*.zip=00;31:*.zoo=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.tb2=00;31:*.tz2=00;31:*.tbz2=00;31:*.xz=00;31:*.avi=01;35:*.bmp=01;35:*.fli=01;35:*.gif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mng=01;35:*.mov=01;35:*.mpg=01;35:*.pcx=01;35:*.pbm=01;35:*.pgm=01;35:*.png=01;35:*.ppm=01;35:*.tga=01;35:*.tif=01;35:*.xbm=01;35:*.xpm=01;35:*.dl=01;35:*.gl=01;35:*.wmv=01;35:*.aiff=00;32:*.au=00;32:*.mid=00;32:*.mp3=00;32:*.ogg=00;32:*.voc=00;32:*.wav=00;32:&apos;
+LS_OPTIONS=&apos;-N --color=tty -T 0&apos;
+MACHTYPE=x86_64-suse-linux
+MAIL=/var/spool/mail/asztrik
+MANPATH=/usr/local/man:/usr/share/man
+MINICOM=&apos;-c on&apos;
+MORE=-sl
+NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat
+NNTPSERVER=news
+OPTERR=1
+OPTIND=5
+OSTYPE=linux
+PAGER=less
+PATH=/home/asztrik/scripts:/home/asztrik/bin/apache-maven-3.3.9/bin/:/home/asztrik/bin/activator-dist-1.3.9:/usr/java/jdk1.7.0_79/bin/:/home/asztrik/scripts:/home/asztrik/bin/apache-maven-3.3.9/bin/:/home/asztrik/bin/activator-dist-1.3.9:/usr/java/jdk1.7.0_79/bin/:/home/asztrik/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games
+PIPESTATUS=([0]=&quot;0&quot;)
+POSIXLY_CORRECT=y
+PPID=7177
+PROFILEREAD=true
+PS4=&apos;+ &apos;
+PWD=/home/asztrik/Documents/TUW/2DP/3/pmf-1.0/capture
+PYTHONSTARTUP=/etc/pythonstart
+QEMU_AUDIO_DRV=pa
+QT_IM_MODULE=ibus
+QT_SYSTEM_DIR=/usr/share/desktop-data
+SDK_HOME=/usr/java/latest
+SDL_AUDIODRIVER=pulse
+SESSION_MANAGER=local/linux-w1hr.site:@/tmp/.ICE-unix/1589,unix/linux-w1hr.site:/tmp/.ICE-unix/1589
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments:posix
+SHLVL=2
+SSH_AGENT_PID=1692
+SSH_ASKPASS=/usr/lib/ssh/ssh-askpass
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+TERM=xterm
+TMPDIR=/tmp
+UID=1000
+USER=asztrik
+USERNAME=asztrik
+VDPAU_DRIVER=va_gl
+VTE_VERSION=3803
+WINDOWID=65025249
+WINDOWMANAGER=/usr/bin/gnome
+WINDOWPATH=7
+XAUTHORITY=/run/gdm/auth-for-asztrik-eVaZiz/database
+XCURSOR_THEME=DMZ
+XDG_CONFIG_DIRS=/etc/xdg
+XDG_CURRENT_DESKTOP=GNOME
+XDG_DATA_DIRS=/usr/share
+XDG_MENU_PREFIX=gnome-
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SEAT=seat0
+XDG_SESSION_DESKTOP=gnome
+XDG_SESSION_ID=1
+XDG_VTNR=7
+XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt
+XKEYSYMDB=/usr/X11R6/lib/X11/XKeysymDB
+XMODIFIERS=@im=ibus
+XNLSPATH=/usr/share/X11/nls
+XSESSION_IS_UP=yes
+_=posix
+dir=/home/asztrik/Documents/TUW/2DP/3/
+limitLog=false
+line=
+opt=&apos;?&apos;
+package=
+processExecutionScript=/home/asztrik/Documents/TUW/2DP/3/maker.sh
+recursivelyResolvePackages=false
+skipProcess=false
+skipTrace=false
+strace_log=/home/asztrik/Documents/TUW/2DP/3//strace/strace.log.7199
+target=/home/asztrik/Documents/TUW/2DP/3//strace.log.7199</pmf:environmentVars>
+        <DIO:association rdf:resource="http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2F"/>
+        <DIO:association rdf:resource="http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2Fmaker.sh"/>
+        <DIO:association rdf:resource="http://linux-w1hr.site_local#asztrik"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linux-w1hr.site_local#process_-1 -->
+
+    <owl:NamedIndividual rdf:about="http://linux-w1hr.site_local#process_-1">
+        <rdf:type rdf:resource="http://timbus.teco.edu/ontologies/DIO.owl#ApplicationFunction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process_-1, /home/asztrik/Documents/TUW/2DP/3/maker.sh&quot;</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/home/asztrik/Documents/TUW/2DP/3/maker.sh&quot;: /home/asztrik/Documents/TUW/2DP/3/maker.sh</rdfs:comment>
+        <DIO:accesses rdf:resource="http://linux-w1hr.site_local#inf_process_-1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linux-w1hr.site_local#process_0 -->
+
+    <owl:NamedIndividual rdf:about="http://linux-w1hr.site_local#process_0">
+        <rdf:type rdf:resource="http://timbus.teco.edu/ontologies/DIO.owl#ApplicationFunction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process_0, /home/asztrik/Documents/TUW/2DP/3/maker.sh&quot;, /home/asztrik/Documents/TUW/2DP/3/maker.sh&quot;</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/home/asztrik/Documents/TUW/2DP/3/maker.sh&quot;: /home/asztrik/Documents/TUW/2DP/3/maker.sh
+/home/asztrik/Documents/TUW/2DP/3/maker.sh&quot;: /home/asztrik/Documents/TUW/2DP/3/maker.sh</rdfs:comment>
+        <DIO:accesses rdf:resource="http://linux-w1hr.site_local#inf_process_0"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.5-SNAPSHOT) http://owlapi.sourceforge.net -->
+

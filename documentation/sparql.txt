@@ -1,0 +1,107 @@
+
++-0-----------------------------------------------------------------+
+Display identifier and user of the system for which the execution was captured.
+
+Lesson: prefixes
++-------------------------------------------------------------------+
+SELECT ?node ?user
+	WHERE {
+		?node a dio:Node.
+		?user a sec:User
+	}
++-------------------------------------------------------------------+
+
+http://linux-w1hr.site_local#local_system	http://linux-w1hr.site_local#asztrik
+
++-1-----------------------------------------------------------------+
+Display version of the operating system
+
+The real version would be OpenSuSE 13.2, but it was not found anywhere in the OWL
++-------------------------------------------------------------------+
+PREFIX sys: <http://timbus.teco.edu/ontologies/DSOs/software.owl#>
+
+
+SELECT ?operatingsystem
+	WHERE {
+		?operatingsystem a sys:OperatingSystem
+	}
++-------------------------------------------------------------------+
+
+Linux
+
++-2-----------------------------------------------------------------+
+List Debian packages that are need by the experiment for execution
+
+ffmpeg, sox, sed are the 3 software which can be found as package.
+Interestingly only the number was returned.
++-------------------------------------------------------------------+
+SELECT ?packages
+	WHERE {
+		?packages a dio:SystemSoftware
+	}
++-------------------------------------------------------------------+
+
+3
+
++-3-----------------------------------------------------------------+
+List data files read and written by the experiment (hint: check System Software)
+
+I kept the original encoding, and basically the maker.sh does the
+biggest part of the work.
++-------------------------------------------------------------------+
+SELECT ?data
+	WHERE {
+		?data a sys:DataFile
+	}
++-------------------------------------------------------------------+
+
+http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2Fmaker.sh	
+http://linux-w1hr.site_local#%2Fhome%2Fasztrik%2FDocuments%2FTUW%2F2DP%2F3%2F
+
++-4-----------------------------------------------------------------+
+Check whether the processes communicates with external services (ASK query)
+
+I'm not using any.
++-------------------------------------------------------------------+
+PREFIX srv: <http://timbus.teco.edu/ontologies/preservationIdentifier/tool_KB_instance.owl#>
+
+ASK
+{
+  <http://linux-w1hr,site_local> srv:ServiceInterface ?extsrv .
+}
++-------------------------------------------------------------------+
+
+False
+
++-5-----------------------------------------------------------------+
+List addresses of external services
+
+No external services: empty list
++-------------------------------------------------------------------+
+PREFIX srv: <http://timbus.teco.edu/ontologies/DSOs/service.owl#>
+
+SELECT ?srv
+	WHERE {
+		?srv a srv:Service
+	}
++-------------------------------------------------------------------+
+<no result>
++-6-----------------------------------------------------------------+
+List dependencies that are neither data files, nor Debian packages, 
+but are still used in theexperiment.
+
+The only other entries related were these, but no more information
+could be found
++-------------------------------------------------------------------+
+SELECT ?deps
+	WHERE {
+		?deps a dio:ApplicationFunction
+	}
++-------------------------------------------------------------------+
+
+http://linux-w1hr.site_local#process_0	
+http://linux-w1hr.site_local#process_-1
+
++-------------------------------------------------------------------+
++-------------------------------------------------------------------+
+
